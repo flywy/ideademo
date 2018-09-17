@@ -4,12 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.didispace</groupId>
-	<artifactId>eureka-server</artifactId>
+	<artifactId>ideademo</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>eureka-server</name>
-	<description>Spring Cloud project</description>
+	<name>ideademo</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
