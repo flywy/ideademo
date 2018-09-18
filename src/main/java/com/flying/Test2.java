@@ -26,6 +26,9 @@ public class Test2 {
         System.out.println(transactionsIds);//[6, 5, 3, 1]
 
 
+        System.out.println(transactionsIds);//[6, 5, 3, 1]
+
+
     }
 
 }

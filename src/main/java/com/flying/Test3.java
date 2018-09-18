@@ -18,6 +18,8 @@ public class Test3 {
 
         System.out.println(current);
 
+        System.out.println(current);
+
 
     }
 
