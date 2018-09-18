@@ -22,7 +22,21 @@ public class Test2 {
                         .sorted(Comparator.comparing( Transaction::getValue).reversed())
                         .map(Transaction::getId)
                         .collect(Collectors.toList());
-        
+
+        List<Integer> transactionsIds1 =
+                transactions.parallelStream().filter(t -> t.getType() == Transaction.Type.GEOCERY)
+                        .sorted(Comparator.comparing( Transaction::getValue).reversed())
+                        .map(Transaction::getId)
+                        .collect(Collectors.toList());
+
+        List<Integer> transactionsIds2 =
+                transactions.parallelStream().filter(t -> t.getType() == Transaction.Type.GEOCERY)
+                        .sorted(Comparator.comparing( Transaction::getValue).reversed())
+                        .map(Transaction::getId)
+                        .collect(Collectors.toList());
+
+
+
         System.out.println(transactionsIds);//[6, 5, 3, 1]
 
 
